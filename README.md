@@ -1,6 +1,7 @@
 # monotonic-regulation
 
 General Explanation
+
 designed to find and display all monotonic regulation conditions from a given table of conditions. The table represents different combinations of activators and inhibitors, and the program checks each combination to determine if it satisfies the monotonic requirement.
 How the Program Works
 1.	Global Definitions and Table Initialization:
