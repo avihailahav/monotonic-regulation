@@ -26,7 +26,7 @@ o	It iterates through the monotonicConditions array and prints each condition in
 Compile the C Code
 In the terminal, navigate to the directory where the C file is saved. Then compile the code using GCC:
 
-gcc monotonic_conditions.c -o monotonic_conditions
+gcc main.c -o monotonic_conditions
 
 This command compiles monotonic_conditions.c into an executable named monotonic_conditions.
 
