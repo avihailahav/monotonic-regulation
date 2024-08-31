@@ -1,10 +1,25 @@
 # monotonic-regulation
 
-1. regulation_conditions: The 2D array stores the 18 rows of conditions from the table.
-2. is_monotonic: A placeholder function to check if a condition is monotonic. You need to replace the logic inside this function according to your specific requirements.
-3. find_monotonic_conditions: Iterates over all conditions, checks if they are monotonic using is_monotonic, and stores the monotonic conditions in the result array.
-4. main: Finds all monotonic conditions and prints them.
-You'll need to fill in the actual conditions and the logic for checking monotonicity in the is_monotonic function.
+General Explanation
+designed to find and display all monotonic regulation conditions from a given table of conditions. The table represents different combinations of activators and inhibitors, and the program checks each combination to determine if it satisfies the monotonic requirement.
+How the Program Works
+1.	Global Definitions and Table Initialization:
+o	The program defines constants ROWS and COLS to represent the number of rows and columns in the table.
+o	The MONOTONIC and NOT_MONOTONIC constants are used to represent the monotonic and non-monotonic states.
+o	The regulationTable array is initialized globally with the given regulation conditions.
+2.	Monotonic Check Function:
+o	The checkMonotonic function iterates through each column of a given condition.
+o	It checks if the presence of activators and inhibitors does not decrease as we move through the columns.
+o	If any decrease is found, the function returns NOT_MONOTONIC; otherwise, it returns MONOTONIC.
+3.	Main Function:
+o	The main function initializes an array monotonicConditions to store the conditions that are found to be monotonic.
+o	It iterates through each row in the regulationTable and uses the checkMonotonic function to determine if the condition is monotonic.
+o	If a condition is monotonic, it is stored in the monotonicConditions array.
+o	The printMonotonicConditions function is then called to print the stored monotonic conditions in a graphical format.
+4.	Printing Function:
+o	The printMonotonicConditions function prints a header with an underline.
+o	It iterates through the monotonicConditions array and prints each condition in a formatted table with borders.
+
 
 # HOW TO RUN
 Compile the C Code
